@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
+import MainPage from './pages/MainPage'
+import Deterima from './pages/Deterima'
+import Jadian from './pages/Jadian'
+import Nama from './pages/Name'
 
-function App() {
+const App: React.FC = () => {
+  const nama = localStorage.getItem("nama");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!nama ? (
+        <Router>
+          <Route path="/nama" exact={true} component={Nama} />
+          <Redirect to="/nama" path="/nama" />
+        </Router>
+      ) : (
+        <Router>
+          <Route path="/" exact={true} component={MainPage} />
+          <Route path="/diterima" component={Deterima} />
+          <Route path="/jadian" component={Jadian} />
+        </Router>
+      )}
     </div>
   );
 }
 
-export default App;
+export default App

@@ -5,9 +5,191 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-wrap {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets//nathan-dumlao-EdULZpOKsUE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.android-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notification-wrapper {
+  margin-top: 20px;
+}
+
+.notofication-message {
+  padding: 10px;
+  width: 60vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+
+.sukses-wrap-data {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+.android-wrapper h5 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-aaccepted {
+  border: 1px solid darkblue;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 5px 10px #888888;
+}
+
+.wrap-deterima {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.wrap-deterima img {
+  width: 80%;
+}
+
+.nama-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./assets//alex-iby-LaHo9Set3bI-unsplash.jpg');
+  background-size: cover;
+}
+
+.form-nama {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40vh;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.form-nama input {
+  width: 50%;
+  border: none;
+}
+
+.sukses-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets//nathan-dumlao-EdULZpOKsUE-unsplash.jpg');
+  background-size: cover;
+}
+
+.button-nama {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.button-nama p:nth-child(1) {
+  border: 2px solid #888888;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-nama p:nth-child(2) {
+  width: 30%;
+  border: 2px solid #888888;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .form-nama {
+    width: 100%;
+    height: 60vh;
+  }
+
+
+  .form-nama input {
+    width: 100%;
+    border: none;
+  }
+
+  .button-nama p:nth-child(1) {
+    width: 100%;
+    border: 2px solid #888888;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-nama p:nth-child(2) {
+    width: 100%;
+    border: 2px solid #888888;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-wrap {
+    background: url('./assets/photo-1535615615570-3b839f4359be.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .notofication-message {
+    padding: 10px;
+    width: 100vw;
+  }
+
 }
